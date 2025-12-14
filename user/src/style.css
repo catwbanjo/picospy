@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+    --color-frappe-950: #c6d0f5;
+    --color-frappe-900: #b5bfe2;
+    --color-frappe-850: #a5adce;
+    --color-frappe-800: #949cbb;
+    --color-frappe-750: #838ba7;
+    --color-frappe-700: #737994;
+    --color-frappe-650: #626880;
+    --color-frappe-600: #51576d;
+    --color-frappe-550: #414559;
+    --color-frappe-500: #303446;
+}
