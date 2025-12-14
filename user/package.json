@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "name": "picospy",
+  "version": "0.0.1",
+  "description": "The take-a-peek search engine.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catwbanjo/picospy.git"
+  },
+  "keywords": [
+    "?"
+  ],
+  "author": "catwbanjo / lumi (1)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/catwbanjo/picospy/issues"
+  },
+  "homepage": "https://github.com/catwbanjo/picospy#readme"
+}
