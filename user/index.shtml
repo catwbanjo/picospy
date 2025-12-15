@@ -5,13 +5,17 @@
     <link href="./prod/style.css" rel="stylesheet">
 </head>
 <body class="w-screen h-screen">
-    <div class="bg-frappe-550 w-screen h-15/18 flex items-center justify-center">
-        <img src="src/cospi_white.svg" class="h-13 p-1 pe-3"></img><div class="bg-frappe-600 w-130 h-12 border-1 drop-shadow-lg drop-shadow-frappe-600/30 border-frappe-700 transition hover:border-frappe-750 rounded-full flex items-center justify-between">
-            <input class="font-[DM_Sans] border-0 outline-0 text-frappe-950 ps-5 flex-1/1" autocomplete="off" placeholder="Type to start searching" autofocus/><img src="src/returnicon.svg" class="h-full p-3"></img>
-        </div>
+<div class="bg-frappe-550 w-screen h-15/18 flex items-center justify-center">
+    <a href="/"><img src="../src/cospi_white.svg" class="h-13 p-1 pe-4 py-1"></img></a><div class="bg-frappe-600 w-130 h-12 border-1 drop-shadow-lg drop-shadow-frappe-600/30 border-frappe-700 rounded-full">
+        
+        <form action="/search/" method="get" class="w-full h-full flex items-center justify-between">
+        <input type="search" name="q" class="font-[DM_Sans] w-full border-0 outline-0 text-frappe-950 ps-5 flex-1/1" autocomplete="off" placeholder="Type a query"/><button type="submit" class="h-full p-3 cursor-pointer"><img src="../src/returnicon.svg" class="h-full"></img></button>
+        </form>
     </div>
+</div>
 
-    <p class="bg-frappe-550 w-screen font-[DM_Sans] text-frappe-850 h-3/18 text-center text-sm">By using this service, you agree to our Terms of Service and Privacy Policy.</p>
+
+    <p class="bg-frappe-550 w-screen font-[DM_Sans] text-frappe-850 h-3/18 text-center text-sm">By using this service, you agree to our <a href="/legal/terms_of_service.shtml" class="font-bold underline">Terms of Service</a> and <a href="/legal/privacy_policy.shtml" class="font-bold underline">Privacy Policy.</a></p>
     <!--#include virtual="/prod/footer.html"-->
     <!-- <p class="bg-frappe-500 w-screen font-[DM_Sans] text-frappe-950 p-3 text-center">Made with ❤️ at Korea · Privacy Policy · Terms of Service</p> -->
 </body>

@@ -1,0 +1,37 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="/prod/style.css" rel="stylesheet">
+</head>
+
+<!--readability-->
+<style>
+    .min-h-dvh > * {color: #ffffff;}
+</style>
+
+<body class="w-screen h-screen">
+    <!--#include virtual="/prod/bar.html"-->
+    <div class="bg-frappe-650 w-screen min-h-dvh p-7 text-white">
+        <i class="text-frappe-750">(If you wish to access more documents, you can scroll down to see the footer.)</i>
+        <h1 class="text-2xl leading-13">Privacy Policy</h1>
+        <p>&lt;last updated: <b>2025-12-15</b>&gt;</p><br/>
+        We may log your system informations for analytics, enforcing ToS and UX improvement. The log includes:
+        <table class="table-auto border-collapse border-1">
+            <tr>
+                <th class="border-1 p-2">What we collect</td>
+                <th class="border-1 p-2">What for?</td>
+                </tr>
+            <tr>
+                <td class="border-1 p-3">Mandatory title: IP Address</td>
+                <td class="border-1 p-3">Prevent DDoS and such abuses, and enforce ToS</td>
+            </tr>
+            <tr>
+                <td class="border-1 p-3">Opt-in titles: What sites you frequently visit (e.g "GitHub"), how frequently you use this service, how long you stay on a certain page</td>
+                <td class="border-1 p-3">For analytics and overall UX improvement; <b>This is opt-in!</b></td>
+            </tr>
+        </table>
+   </div>
+    <!--#include virtual="/prod/footer.html"-->
+    <!-- <p class="bg-frappe-500 w-screen font-[DM_Sans] text-frappe-950 p-3 text-center">Made with ❤️ at Korea · Privacy Policy · Terms of Service</p> -->
+</body>

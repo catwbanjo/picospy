@@ -1,5 +1,8 @@
-    <div class="bg-frappe-550 w-screen h-20 flex items-center justify-center">
-        <img src="../src/cospi_white.svg" class="h-13 p-1 pe-4 py-1"></img><div class="bg-frappe-600 w-130 h-12 border-1 drop-shadow-lg drop-shadow-frappe-600/30 border-frappe-700 rounded-full flex items-center justify-between">
-            <input class="font-[DM_Sans] border-0 outline-0 text-frappe-950 ps-5 flex-1/1" autocomplete="off" placeholder="Type a query"/><img src="../src/returnicon.svg" class="h-full p-3"></img>
-        </div>
+<div class="bg-frappe-550 w-screen h-20 flex items-center justify-center">
+    <a href="/"><img src="../src/cospi_white.svg" class="h-13 p-1 pe-4 py-1"></img></a><div class="bg-frappe-600 w-130 h-12 border-1 drop-shadow-lg drop-shadow-frappe-600/30 border-frappe-700 rounded-full">
+        
+        <form action="/search/" method="get" class="w-full h-full flex items-center justify-between">
+        <input type="search" name="q" class="font-[DM_Sans] w-full border-0 outline-0 text-frappe-950 ps-5 flex-1/1" autocomplete="off" placeholder="Type a query"/><button type="submit" class="h-full p-3 cursor-pointer"><img src="../src/returnicon.svg" class="h-full"></img></button>
+        </form>
     </div>
+</div>
