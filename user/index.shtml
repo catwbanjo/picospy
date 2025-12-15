@@ -12,6 +12,6 @@
     </div>
 
     <p class="bg-frappe-550 w-screen font-[DM_Sans] text-frappe-850 h-3/18 text-center text-sm">By using this service, you agree to our Terms of Service and Privacy Policy.</p>
-    <!--#include virtual="src/footer.html"-->
+    <!--#include virtual="/prod/footer.html"-->
     <!-- <p class="bg-frappe-500 w-screen font-[DM_Sans] text-frappe-950 p-3 text-center">Made with ❤️ at Korea · Privacy Policy · Terms of Service</p> -->
 </body>

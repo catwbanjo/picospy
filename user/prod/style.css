@@ -8,18 +8,21 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
-    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-frappe-950: #c6d0f5;
     --color-frappe-850: #a5adce;
-    --color-frappe-800: #949cbb;
     --color-frappe-750: #838ba7;
     --color-frappe-700: #737994;
     --color-frappe-650: #626880;
@@ -183,12 +186,6 @@
   .table {
     display: table;
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
-  .h-1\/18 {
-    height: calc(1/18 * 100%);
-  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -207,18 +204,6 @@
   .h-15\/18 {
     height: calc(15/18 * 100%);
   }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
-  .h-16\/18 {
-    height: calc(16/18 * 100%);
-  }
-  .h-17 {
-    height: calc(var(--spacing) * 17);
-  }
-  .h-17\/18 {
-    height: calc(17/18 * 100%);
-  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -230,6 +215,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .min-h-dvh {
+    min-height: 100dvh;
   }
   .w-13 {
     width: calc(var(--spacing) * 13);
@@ -252,11 +240,11 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
   .resize {
     resize: both;
+  }
+  .list-disc {
+    list-style-type: disc;
   }
   .flex-col {
     flex-direction: column;
@@ -297,6 +285,9 @@
   .bg-frappe-600 {
     background-color: var(--color-frappe-600);
   }
+  .bg-frappe-650 {
+    background-color: var(--color-frappe-650);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -305,6 +296,9 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -318,6 +312,9 @@
   .pe-4 {
     padding-inline-end: calc(var(--spacing) * 4);
   }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
   .text-center {
     text-align: center;
   }
@@ -327,15 +324,60 @@
   .font-\[DM_Sans\] {
     font-family: DM Sans;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .leading-3 {
+    --tw-leading: calc(var(--spacing) * 3);
+    line-height: calc(var(--spacing) * 3);
+  }
+  .leading-5 {
+    --tw-leading: calc(var(--spacing) * 5);
+    line-height: calc(var(--spacing) * 5);
+  }
+  .leading-6 {
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
+  }
+  .leading-8 {
+    --tw-leading: calc(var(--spacing) * 8);
+    line-height: calc(var(--spacing) * 8);
+  }
+  .leading-13 {
+    --tw-leading: calc(var(--spacing) * 13);
+    line-height: calc(var(--spacing) * 13);
+  }
+  .leading-15 {
+    --tw-leading: calc(var(--spacing) * 15);
+    line-height: calc(var(--spacing) * 15);
+  }
+  .leading-35 {
+    --tw-leading: calc(var(--spacing) * 35);
+    line-height: calc(var(--spacing) * 35);
+  }
+  .text-frappe-550 {
+    color: var(--color-frappe-550);
+  }
+  .text-frappe-750 {
+    color: var(--color-frappe-750);
   }
   .text-frappe-850 {
     color: var(--color-frappe-850);
   }
   .text-frappe-950 {
     color: var(--color-frappe-950);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -375,13 +417,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .hover\:animate-ping {
-    &:hover {
-      @media (hover: hover) {
-        animation: var(--animate-ping);
-      }
-    }
-  }
   .hover\:border-frappe-750 {
     &:hover {
       @media (hover: hover) {
@@ -389,43 +424,15 @@
       }
     }
   }
-  .hover\:border-frappe-800 {
-    &:hover {
-      @media (hover: hover) {
-        border-color: var(--color-frappe-800);
-      }
-    }
-  }
-  .active\:animate-ping {
-    &:active {
-      animation: var(--animate-ping);
-    }
-  }
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";
@@ -485,21 +492,11 @@
   syntax: "*";
   inherits: false;
 }
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;

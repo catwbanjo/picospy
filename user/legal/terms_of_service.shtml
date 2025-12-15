@@ -1,0 +1,56 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="/prod/style.css" rel="stylesheet">
+</head>
+
+<!--readability-->
+<style>
+    .min-h-dvh > * {color: #ffffff;}
+</style>
+
+<body class="w-screen h-screen">
+    <!--#include virtual="/prod/bar.html"-->
+    <div class="bg-frappe-650 w-screen min-h-dvh p-7 text-white">
+        <i class="text-frappe-750">(If you wish to access more documents, you can scroll down to see the footer.)</i>
+        <h1 class="text-2xl leading-13">Terms of Service</h1>
+        <p>&lt;last updated: <b>2025-12-15</b>&gt;</p><br/>
+        The following Terms of Service constitutes a legal agreement between you and Picospy (the "Service", "we", "us" & "our"). Please read the
+         agreement carefully before starting to use the Service as it explains how you'll use the Service, what you're limited by, and region-specific 
+         laws.<br/>
+         If you use this service, you also agree to these terms below. <b>If you don't agree with every, or any of the clauses below, you may not use the Service.</b>
+
+         <h2 class="text-xl leading-13 pt-6">Changes to these clauses</h2>
+         There may be changes to any of the clause in the Terms of Service, and we'll notify you with reasonable methods prior to changing them. By continuing
+          to use the Service after sufficient notification, you agree to the updated clauses.
+
+          <h2 class="text-xl leading-13 pt-6">How you'll use the service & Your limitations</h2>
+          This is a search engine designed to give you search results from a curated list of sources.
+         To use the Service, you can type a query in the search box on the top of this page.<br/>
+         However, <b>you should not use the Service for the following purposes</b>, including but not limited to:<br/>
+         <ul class="list-disc p-5 leading-6">
+            <li>Using the Service to violate any applicable laws or regulations, including the laws applicable in your jurisdiction.</li>
+            <li>By any means, purposefully overload, bypass rate limits, disrupt others' use of the Service in any way.</li>
+            <!-- <li>Proxying this site to use it in your project without our prior knowledge and approval.</li> -->
+            <li>Accessing the Service automatically or programatically at a scale.</li>
+        </ul>
+        If you do, <b>we reserve the right to suspend or limit your usage without notice.</b>
+        
+        <h2 class="text-xl leading-13 pt-6">Information regarding age</h2>
+        The Service is not intended for users under the age of 13. 
+
+        <h2 class="text-xl leading-13 pt-6">External content & outbound links</h2>
+        Our service uses an automated system to display you search results. This means that the filtering is not always perfect.
+        We do not knowingly host or control illegal content. Continuing to use our services is at your discretion.
+        Please remember that <b>those search results come from third parties</b>, not us. We aren't affiliated and doesn't endorse any of the external websites.
+        
+        <h2 class="text-xl leading-13 pt-6">Our service is "as is"</h2>
+        Our service comes "as is" and does not guarantee fresh or accurate results. No warranty is provided with the Service.
+
+        <h2 class="text-xl leading-13 pt-6">This is exhaustive</h2>
+        This Terms of Service constitute the entire agreement between you and the Service regarding your use of the Service. Any statements, representations, or agreements not expressly included in these Terms are not binding.
+    </div>
+    <!--#include virtual="/prod/footer.html"-->
+    <!-- <p class="bg-frappe-500 w-screen font-[DM_Sans] text-frappe-950 p-3 text-center">Made with ❤️ at Korea · Privacy Policy · Terms of Service</p> -->
+</body>
