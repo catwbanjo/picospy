@@ -1,0 +1,29 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="/prod/style.css" rel="stylesheet">
+</head>
+
+<!--readability-->
+<style>
+    .min-h-dvh > * {color: #ffffff;}
+</style>
+
+<body class="w-screen h-screen">
+    <!--#include virtual="/prod/bar.html"-->
+    <div class="bg-frappe-650 w-screen min-h-dvh p-7 text-white">
+        <i class="text-frappe-750">(If you wish to access more documents, you can scroll down to see the footer.)</i>
+        <h1 class="text-2xl leading-13">Contacts</h1>
+        <br/>
+        <b>Project Name:</b> Picospy<br/>
+        <b>Operator / Owner:</b> catwbanjo on GitHub<br/>
+        <b>Contact Email:</b> sungzozo@naver.com / cathebush@gmail.com / inbox@ggcat.link(inbox only!)<br/>
+        <b>Reach me on the primary email, sungzozo@naver.com - as that is the most checked inbox!</b>
+        <br/><b>You can also reach me on SNS like these:</b><br/>
+        <b>SNS:</b> @starsncolors on X (formerly Twitter), @sonolas on Discord.
+        <br/><br/>Don't hesitate to reach us if you encounter any issues or have questions about our service!
+    </div>
+    <!--#include virtual="/prod/footer.html"-->
+    <!-- <p class="bg-frappe-500 w-screen font-[DM_Sans] text-frappe-950 p-3 text-center">Made with ❤️ at Korea · Privacy Policy · Terms of Service</p> -->
+</body>
