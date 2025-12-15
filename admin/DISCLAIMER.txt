@@ -1,0 +1,4 @@
+This is a private interface only used for experimenting and logs.
+Sensitive credentials were automatically removed, and you'd have to create your own.
+
+This project was never meant to be public anyway.
