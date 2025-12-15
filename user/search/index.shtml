@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <link href="../prod/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-frappe-600 flex items-center flex-col">
     <!--#include virtual="/prod/bar.html"-->
 
-    <div class="bg-frappe-600 w-screen h-screen flex items-center flex-col">
-        <p class="font-[DM_Sans] text-frappe-850 p-5 text-left w-screen">Indexed 5 sites (0.03), avg SEO <b>0.92 (bad)</b>, database searched <b>Reddit, GitHub, StackOverflow</b>. <u>Add filters</u></p>
-        <div class="w-13/14 h-30">
-            <p class="font-[DM_Sans] text-frappe-950">Stack Overflow</p>
+    <div class="bg-frappe-600 w-180 h-screen flex items-center flex-col">
+        <p class="font-[DM_Sans] text-frappe-850 p-5 text-left w-full">Indexed 5 sites (0.03), avg SEO <b>0.92 (bad)</b>, database searched <b>Reddit, GitHub, StackOverflow</b>. <u>Add filters</u></p>
+        <div class="w-13/14 h-45 flex flex-row">
+            <div class="w-7/9 h-full flex flex-col justify-between">
+            <span class="font-[DM_Sans] h-6 text-frappe-950 flex"><img class="h-full p-1" src="/src/bucket_bold.svg"/><b>Stack Overflow</b></span>
+            <p class="font-[DM_Sans] text-frappe-950 text-xl mb-2">How does AJAX work?</p>
+            <p class="font-[DM_Sans] text-sm text-frappe-950 bg-frappe-550 w-full overflow-hidden max-h-3/4 h-3/4 p-2">What is the essence of AJAX? For example, I want to have a link on my page such that when a user clicks this link, some information is sent to my server without the reloading of the current page. Is that AJAX?
+
+I was able to get this behavior by using isoframes. In more details I put a link (let's say a small image) in a small isoframe. When the user clicks this link the browser reloads only the page in the isoframe.</p>
+        </div>
+            <div class="w-2/9 h-full flex flex-col items-end">
+                <b class="font-[DM_Sans] text-emerald-300 text-right w-full leading-6">cseo: 74% (fine)</b>
+                <b class="font-[DM_Sans] text-frappe-850 text-right w-full leading-6">accuracy: 94%</b>
+            <p class="font-[DM_Sans] text-sm text-frappe-950 bg-frappe-550 w-7/8 overflow-hidden max-h-3/4 h-3/4 mt-2 mask-l-from-0% mask-l-to-100% flex flex-col items-center justify-center"><span class="font-[DM_Sans] text-frappe-950">stackoverflow.com</span><img src="/src/exit.svg" class="h-1/3 w-1/3"></p>
+            </div>
         </div>
     </div>
     
